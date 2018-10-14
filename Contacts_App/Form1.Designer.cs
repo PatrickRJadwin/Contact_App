@@ -47,7 +47,7 @@
             this.groupBox2.Controls.Add(this.listBox1);
             this.groupBox2.Location = new System.Drawing.Point(447, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(314, 289);
+            this.groupBox2.Size = new System.Drawing.Size(314, 137);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Contact, Full Info";
@@ -57,35 +57,38 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(6, 19);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(302, 264);
+            this.listBox1.Size = new System.Drawing.Size(302, 108);
             this.listBox1.TabIndex = 0;
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(453, 307);
+            this.delete.Location = new System.Drawing.Point(447, 187);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(132, 50);
             this.delete.TabIndex = 3;
             this.delete.Text = "Delete Selected";
             this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(623, 307);
+            this.button2.Location = new System.Drawing.Point(629, 187);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 50);
             this.button2.TabIndex = 4;
             this.button2.Text = "Add New Contact";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(453, 376);
+            this.button3.Location = new System.Drawing.Point(447, 282);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 50);
             this.button3.TabIndex = 5;
             this.button3.Text = "Edit Selected";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // listView1
             // 
@@ -111,7 +114,7 @@
             // First_Name
             // 
             this.First_Name.Text = "First Name";
-            this.First_Name.Width = 190;
+            this.First_Name.Width = 164;
             // 
             // Last_Name
             // 
@@ -148,15 +151,15 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader ID;
         private System.Windows.Forms.ColumnHeader First_Name;
         private System.Windows.Forms.ColumnHeader Last_Name;
         private System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.ListView listView1;
+        public System.Windows.Forms.ListBox listBox1;
     }
 }
 
